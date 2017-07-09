@@ -1,0 +1,21 @@
+<view>
+  <view class="header">
+    <image class="head-image" src="{{isPlayingMusic ? music.coverImg : headImgSrc}}"></image>
+    <image class="music" src="{{isPlayingMusic ? '/image/icon/music-stop.png' : '/image/icon/music-start.png'}}" bindtap="onMusicTap"></image>
+  </view>
+  <view class="author-info">
+    <image class="author-avatar" src="{{avatar}}"></image>
+    <text class="author-name">{{author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="author-date">{{dateTime}}</text>
+  </view>
+  <view class="title-area">
+    <text class="title">{{title}}</text>
+    <view class="toolbar">
+      <image wx:if="{{collected}}" bindtap="onCollectionTap" src="/image/icon/collection.png"></image>
+      <image wx:else bindtap="onCollectionTap" src="/image/icon/collection-anti.png"></image>
+      <image src="/image/icon/share.png"></image>
+    </view>
+  </view>
+  <text class="detail">{{detail}}</text>
+</view>

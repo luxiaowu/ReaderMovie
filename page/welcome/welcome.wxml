@@ -1,0 +1,6 @@
+ <!--wxml是骨架文件-->
+<view class="container">
+  <image class="user-avatar" src="{{avatarUrl}}"></image>
+  <text class="user-name">Hello, {{nickName}}</text> 
+  <button class="moto" bindtap="onTap">开启小程序之旅</button>
+</view>

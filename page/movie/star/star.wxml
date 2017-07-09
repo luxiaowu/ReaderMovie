@@ -1,0 +1,8 @@
+<template name="star">
+  <view class="star">
+   <block wx:for="{{stars}}">
+    <image src="{{item > 0 ? '/image/icon/star.png' : '/image/icon/none-star.png'}}"></image>
+   </block>
+    <text>{{average}}</text>
+  </view>
+</template>

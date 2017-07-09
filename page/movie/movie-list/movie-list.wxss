@@ -1,0 +1,27 @@
+@import "../movie-item/movie-item.wxss";
+.movie-list { padding: 20rpx; }
+
+.movie-list-head { margin-bottom: 20rpx; }
+
+.movie-list-head .slogan { 
+  font-size: 13px;
+  color: #333;
+}
+
+.movie-list .more {
+  width: 9rpx;
+  height: 16rpx;
+}
+
+.more-text { color: #1f4ba5; }
+
+.movie-list-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.movie-item-container {
+  display: flex;
+  justify-content: space-between;
+}

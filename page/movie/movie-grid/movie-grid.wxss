@@ -1,0 +1,11 @@
+@import "../movie-item/movie-item.wxss";
+.movie-grid-container { 
+  padding: 20rpx; 
+  overflow: hidden;
+}
+.movie { 
+  float: left;
+  margin-bottom: 40rpx; 
+  margin-right: 55rpx;
+}
+.movie:nth-child(3n) { margin-right: 0; }

@@ -1,0 +1,116 @@
+/* movie-detail.wxss */
+@import "../star/star.wxss";
+
+.banner {
+  position: relative;
+}
+
+.head-img {
+  width: 100%;
+  -webkit-filter: blur(20px);
+}
+
+.aspect-img {
+  width: 175rpx;
+  height: 238rpx;
+  position: absolute;
+  bottom: -20rpx;
+  right: 30rpx;
+}
+
+.banner .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50rpx 0 0 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 19px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.year {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 30rpx;
+}
+
+.count_area {
+  margin-top: 30rpx;
+}
+
+.count {
+  color: #f21146;
+  margin-right: 5rpx;
+}
+
+.count_post {
+  margin-right: 30rpx;
+}
+
+.meta {
+  padding: 20rpx 30rpx 50rpx;
+  line-height: 2;
+  border-bottom: 1px solid #999;
+}
+
+.label {
+  color: #999;
+  margin-right: 20rpx;
+  white-space: nowrap;
+}
+
+.row {
+  display: flex;
+}
+
+.summary {
+  padding: 30rpx 50rpx;
+  border-bottom: 1px solid #999;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+.summary-title {
+  color: #999;
+  margin-bottom: 20rpx;
+}
+
+.original_title {
+  font-size: 16px;
+}
+
+.casts { 
+  padding: 30rpx 50rpx;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+ }
+
+.casts_container { 
+  width: 100%; 
+  white-space: nowrap;
+}
+
+.casts_item {
+  width: 170rpx;
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 40rpx;
+  text-align: center;
+}
+
+.casts_avatar {
+  width: 170rpx;
+  height: 210rpx;
+}
+
+.casts_name {
+  margin: 10rpx auto;
+  white-space: pre-wrap;
+}

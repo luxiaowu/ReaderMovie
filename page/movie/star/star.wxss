@@ -1,0 +1,10 @@
+.star image {
+  width: 17rpx;
+  height: 17rpx;
+  margin-left: 3rpx;
+}
+
+.star text { 
+  margin-left: 24rpx; 
+  color: #1f3463;
+}

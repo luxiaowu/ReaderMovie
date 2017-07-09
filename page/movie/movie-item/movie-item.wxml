@@ -1,0 +1,8 @@
+<import src="../star/star.wxml"/>
+<template name="movie-item">
+  <view class="movie" bindtap="onMovieTap" data-id="{{id}}">
+    <image class="poster" src="{{image}}"></image>
+    <text class="movie-title">{{title}}</text>
+    <template is="star" data="{{average: average, stars: stars}}"/>
+  </view>
+</template>

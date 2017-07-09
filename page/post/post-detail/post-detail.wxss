@@ -1,0 +1,84 @@
+.header { position: relative; }
+
+.head-image {
+  width: 100%;
+  height: 460rpx;
+}
+
+.music {
+  width: 112rpx;
+  height: 112rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.author-info {
+  margin-top: 20rpx;
+  padding-left: 30rpx;
+}
+
+.author-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+}
+
+.author-name {
+  font-size: 30rpx;
+  font-weight: 300;
+  margin-left: 20rpx;
+  vertical-align: middle;
+  color: #666;
+}
+
+.const-text {
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+}
+
+.author-date {
+  font-size: 24rpx;
+  margin-left: 30rpx;
+  vertical-align: middle;
+  color: #999;
+}
+
+.title-area {
+  position: relative;
+  margin-bottom: 65rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #4b556c;
+  padding-bottom: 65rpx;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  width: 670rpx;
+  margin: 30rpx auto 0;
+  display: block;
+}
+
+.toolbar {
+  position: absolute;
+  right: 40rpx;
+  bottom: -45rpx;
+}
+
+.toolbar image {
+  width: 90rpx;
+  height: 90rpx;
+  margin-left: 40rpx;
+}
+
+.detail {
+  display: block;
+  color: #666;
+  padding: 30rpx;
+  line-height: 44rpx;
+  font-size: 32rpx;
+}

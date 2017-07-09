@@ -1,0 +1,12 @@
+@import "../star/star.wxss";
+.movie { width: 200rpx; }
+.movie .poster {
+  width: 200rpx;
+  height: 270rpx;
+  margin-bottom: 20rpx;
+}
+
+.movie-title {
+  line-height: 1.6;
+  white-space: nowrap;
+}

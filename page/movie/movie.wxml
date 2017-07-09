@@ -1,0 +1,18 @@
+<import src="movie-list/movie-list.wxml" />
+<import src="movie-grid/movie-grid.wxml" />
+<view class="movie-container">
+  <view class="search-container">
+    <icon class="search-icon" type="search" size="17" />
+    <input type="text" placeholder="卑鄙的我3" confirm-type="search" bindfocus="onFocus" bindconfirm="onConfirm" />
+    <!--<icon class="search-cancel" type="cancel" size="17" wx:if="{{search_cancel}}" bindtap="onCancel" />-->
+    <text class="search-cancel" wx:if="{{search_cancel}}" bindtap="onCancel">取消</text>
+  </view>
+  <view class="movie-list-container" wx:if="{{original}}">
+    <template is="movie-list" data="{{...in_theaters}}"></template>
+    <template is="movie-list" data="{{...coming_soon}}"></template>
+    <template is="movie-list" data="{{...top250}}"></template>
+  </view>
+  <view class="search-result" wx:if="{{search_result}}">
+    <template is="movie-grid" data="{{movies}}"/>
+  </view>
+</view>

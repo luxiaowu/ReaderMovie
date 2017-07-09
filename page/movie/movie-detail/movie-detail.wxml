@@ -1,0 +1,52 @@
+<!--movie-detail.wxml-->
+<import src="../star/star.wxml" />
+<view class="banner">
+  <image class="head-img" src="{{image}}" mode="aspectFill"></image>
+  <view class="info" data-src="{{image}}" bindtap="onPreviewImage">
+    <text class="title">{{title}}</text>
+    <text class="year">{{country + ' · '+ year}}</text>
+    <view class="count_area">
+      <text class="count">{{collect_count}}</text>
+      <text class="count_post">人看过</text>
+      <text class="count">{{reviews_count}}</text>
+      <text>条影评</text>
+    </view>
+  </view>
+  <image class="aspect-img" src="{{image}}" data-src="{{image}}" bindtap="onPreviewImage"></image>
+</view>
+<view class="meta">
+  <text class="original_title">{{original_title}}</text>
+  <view class="row">
+    <view>
+      <text class="label">评分</text>
+    </view>
+    <template is="star" data="{{stars: stars, average: average}}"></template>
+  </view>
+  <view class="row">
+    <text class="label">导演</text>
+    <text>{{directors}}</text>
+  </view>
+  <view class="row">
+    <text class="label">演员</text>
+    <text>{{casts}}</text>
+  </view>
+  <view class="row">
+    <text class="label">类型</text>
+    <text>{{genres}}</text>
+  </view>
+</view>
+<view class="summary">
+  <text class="summary-title">剧情简介</text>
+  <text>{{summary}}</text>
+</view>
+<view class="casts">
+  <text class="summary-title">影人</text>
+  <scroll-view class="casts_container" scroll-x="true">
+    <block wx:for="{{casts_avatars}}">
+      <view class="casts_item">
+        <image class="casts_avatar" src="{{item.avatar}}"></image>
+        <text class="casts_name">{{item.name}}</text>
+      </view>
+    </block>
+  </scroll-view>
+</view>
